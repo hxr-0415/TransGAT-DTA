@@ -243,7 +243,6 @@ class FC(torch.nn.Module):
         Pridection = self.FC_layers(Combined)
         return Pridection
 
-# Main TransGAT-DTA Class
 class TransGATDTA(torch.nn.Module):
     def __init__(self, tokenizer):
         super(TransGATDTA, self).__init__()
