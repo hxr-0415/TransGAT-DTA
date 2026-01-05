@@ -133,7 +133,7 @@ def experiment(FLAGS, dataset, device):
             if (epoch + 1) % 20 == 0:
                 # Test model
                 total_loss, mse_loss, test_ci, rm2, auc_values, G, P = test(model, device, test_loader, dataset, FLAGS)
-                filename = f"saved_modelsTransgat_model_{dataset}.pth"
+                filename = f"saved_models TransGAT_model_{dataset}.pth"
                 if mse_loss < best_mse:
                     best_mse = mse_loss
                     torch.save(model.state_dict(), filename)
